@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARest Apps | Archipelago Restaurant Apps</title>
+  </head>
+  <body>
+    <div id="skip-to-content"><a id="skip-link" href="#hero">Skip to content</a></div>
+    <nav>
+      <div id="nav-left" class="touch">
+        <p id="logo-text" tabindex="0">ARest Apps</p>
+      </div>
+      <div id="nav-right">
+        <button id="hamburger">☰</button>
+        <ul id="drawer">
+          <li><a href="http://localhost:9000/">Home</a></li>
+          <li><a href="#">Favorite</a></li>
+          <li><a href="https://www.linkedin.com/in/dody-setiawan-21186b249">About Us</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="hero" class="touch">
+      <div id="hero-inner">
+        <h1 tabindex="0">Archipelago Restaurant Apps</h1>
+        <p tabindex="0">Explore the food and drinks you love at restaurants in Indonesia</p>
+      </div>
+    </div>
+    <main class="touch">
+      <h2 tabindex="0">List of Restaurants</h2>
+      <restaurant-list></restaurant-list>
+      <div id="form-to-add">
+        <h3 tabindex="0">Add restaurant</h3>
+        <form id="to-add">
+          <div class="form-element">
+            <label for="restaurant-name">Name:</label><br />
+            <input type="text" id="restaurant-name" /><br />
+          </div>
+          <div class="form-element">
+            <label for="restaurant-city">City:</label><br />
+            <input type="text" id="restaurant-city" /><br />
+          </div>
+          <div class="form-element">
+            <label for="restaurant-image">Image Link:</label><br />
+            <input type="url" id="restaurant-image" /><br />
+          </div>
+          <div class="form-element">
+            <label for="restaurant-description">Description:</label><br />
+            <textarea id="restaurant-description" rows="8"></textarea><br />
+          </div>
+          <div class="form-element">
+            <p tabindex="0">Choose your position in the restaurant</p>
+            <select id="position">
+              <option value="owner">Owner</option>
+              <option value="employe">Employe</option>
+              <option value="customer">Customer</option>
+            </select>
+          </div>
+          <input type="submit" value="ADD" />
+        </form>
+      </div>
+      <div id="form-to-report">
+        <h3 tabindex="0">Report a problem</h3>
+        <form id="to-report">
+          <div class="form-element">
+            <label for="user-name">Name:</label><br />
+            <input type="text" id="user-name" /><br />
+          </div>
+          <div class="form-element">
+            <label for="problem-description">Description:</label><br />
+            <textarea id="problem-description" rows="8"></textarea><br />
+          </div>
+          <div class="form-element">
+            <label for="image-of-problem">Screenshot or image of the problem:</label><br />
+            <input type="file" id="image-of-problem" accept="image/*" /><br />
+          </div>
+          <input type="submit" value="SEND" />
+        </form>
+      </div>
+    </main>
+    <footer><p tabindex="0">Copyright &copy; 2022 - ARest Apps</p></footer>
+  </body>
+</html>

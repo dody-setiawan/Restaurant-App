@@ -1,0 +1,96 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.restaurant-header {
+  position: relative;
+  box-sizing: border-box;
+  font-size: 0.95em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1%;
+}
+
+.restaurant-city {
+  border-bottom-right-radius: 5px;
+  background-color: #7e370c;
+  width: fit-content;
+  padding: 2% 3%;
+  position: absolute;
+  color: #d4ac2b;
+}
+
+.restaurant-name {
+  margin: 6% 0 4%;
+  font-weight: 700;
+}
+
+.restaurant-description {
+  text-align: left;
+  font-size: 0.9em;
+}
+
+@media (min-width: 520px) {
+  .restaurant-description {
+    font-size: 1em;
+  }
+}
+
+@media (min-width: 700px) {
+  .restaurant-name {
+    font-size: 1.3em;
+  }
+
+  .restaurant-description {
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 1020px) {
+  .restaurant-header {
+    font-size: 1.1em;
+  }
+
+  .restaurant-name {
+    font-size: 1.6em;
+  }
+
+  .restaurant-description {
+    font-size: 1.2em;
+  }
+}
+
+@media (min-width: 1440px) {
+  .restaurant-header {
+    font-size: 1.5em;
+  }
+
+  .restaurant-name {
+    font-size: 2em;
+  }
+
+  .restaurant-description {
+    font-size: 1.6em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .restaurant-header {
+    font-size: 2em;
+  }
+
+  .restaurant-name {
+    font-size: 2.5em;
+  }
+
+  .restaurant-description {
+    font-size: 2em;
+  }
+}

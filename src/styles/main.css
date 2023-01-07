@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda+One&family=Nuosu+SIL&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #b05e27;
+  text-align: center;
+  color: #d4ac2b;
+  overflow-x: hidden;
+  font-family: 'Nuosu SIL', serif;
+}
+
+#skip-to-content {
+  padding: 3%;
+  background-color: #7e370c;
+  text-align: center;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  border-radius: 2%;
+  opacity: 0;
+  z-index: 1;
+}
+
+a {
+  display: inline-block;
+  width: 100%;
+  text-decoration: none;
+  color: #d4ac2b;
+  padding: 7% 2%;
+}
+
+#hero {
+  width: 100%;
+  height: 66vw;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 5%;
+}
+
+#hero-inner {
+  margin: auto;
+  color: #d4ac2b;
+  text-shadow: 1px 1px #7e370c;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #d4ac2b;
+  color: #7e370c;
+  overflow: hidden;
+  z-index: 2;
+}
+
+#nav-left {
+  margin: auto 0;
+  display: flex;
+  padding: 3%;
+}
+
+#nav-right {
+  display: flex;
+  padding-right: 3%;
+}
+
+#logo {
+  width: 1.6em;
+}
+
+#logo-text {
+  font-size: 22px;
+  font-weight: 800;
+  font-family: 'Merienda One', cursive;
+  margin-left: 0.3em;
+}
+
+ul {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #b05e27;
+  height: 44%;
+  width: 60%;
+  margin-top: 20px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  transform: translate(101%, 0);
+  transition: transform 0.4s ease-in-out;
+}
+
+.show {
+  transform: translate(0, 0);
+  transition: transform 0.4s ease-in-out;
+}
+
+#hamburger {
+  width: 45px;
+  height: 45px;
+  font-size: xx-large;
+  border: none;
+  background-color: #d4ac2b;
+  color: #7e370c;
+}
+
+li {
+  list-style: none;
+}
+
+restaurant-list {
+  box-sizing: border-box;
+  margin: 3% 0 5%;
+  width: 100%;
+  padding: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 20px;
+}
+
+#form-to-add {
+  width: 100%;
+  background-color: #d4ac2b;
+  color: #7e370c;
+  padding: 5% 8% 15%;
+}
+
+h3 {
+  text-align: center;
+  margin: 0 auto 5%;
+}
+
+.form-element {
+  text-align: left;
+}
+
+#form-to-add input,
+#form-to-add textarea {
+  width: 100%;
+  background-color: #ffe388;
+  color: #7e370c;
+  border: 1.5px solid #7e370c;
+  border-radius: 5px;
+  font-family: 'Nuosu SIL', serif;
+  padding: 3.5%;
+  font-size: 1.1em;
+  margin: 1% 0 5%;
+}
+
+#form-to-add input:focus,
+#form-to-add textarea:focus {
+  outline: #7e370c solid 2px;
+}
+
+select {
+  padding: 6% 4%;
+  margin-top: 3%;
+  background-color: #7e370c;
+  color: #d4ac2b;
+  border: none;
+  border-radius: 5px;
+}
+
+#form-to-add input[type='submit'] {
+  margin-top: 20%;
+  margin-left: 75%;
+  width: 25%;
+  padding: 6% 0;
+  border-radius: 8%;
+  color: #d4ac2b;
+  background-color: #7e370c;
+  border: none;
+  font-family: 'Nuosu SIL', serif;
+  font-weight: 700;
+  cursor: pointer;
+  justify-items: end;
+}
+
+input[type='submit']:focus {
+  outline: #ffe388 solid 2px;
+}
+
+#form-to-report {
+  width: 100%;
+  background-color: #b05e27;
+  color: #d4ac2b;
+  padding: 5% 8% 15%;
+}
+
+#form-to-report input,
+#form-to-report textarea {
+  background-color: #ffa162;
+  color: #d4ac2b;
+  border: 1.5px solid #d4ac2b;
+  width: 100%;
+  border-radius: 5px;
+  font-family: 'Nuosu SIL', serif;
+  padding: 3.5%;
+  font-size: 1.1em;
+  margin: 1% 0 5%;
+}
+
+#form-to-report input:focus,
+#form-to-report textarea:focus {
+  outline: #ffe388 solid 2px;
+}
+
+#form-to-report input[type='file'] {
+  width: fit-content;
+  margin: 8px 0 0;
+  height: 45px;
+  background-color: transparent;
+  color: #d4ac2b;
+  border: none;
+  padding: 0;
+  font-size: medium;
+}
+
+#form-to-report input[type='submit'] {
+  color: #7e370c;
+  background-color: #d4ac2b;
+  margin-top: 20%;
+  margin-left: 75%;
+  width: 25%;
+  padding: 6% 0;
+  border-radius: 8%;
+  border: none;
+  font-family: 'Nuosu SIL', serif;
+  font-weight: 700;
+  cursor: pointer;
+  justify-items: end;
+}
+
+footer {
+  padding: 3% 0;
+  background-color: #d4ac2b;
+  color: #7e370c;
+  font-weight: 600;
+  font-size: 0.8em;
+}
+
+@media (min-width: 520px) {
+  #logo {
+    width: 2em;
+  }
+
+  restaurant-list {
+    padding: 0 15%;
+  }
+
+  form {
+    width: 90%;
+    margin: auto;
+  }
+
+  select {
+    padding: 3.5% 3%;
+  }
+
+  input[type='submit'] {
+    padding: 4% 0;
+  }
+
+  input,
+  textarea {
+    padding: 3%;
+  }
+}
+
+@media (min-width: 700px) {
+  #logo {
+    width: 2.1em;
+  }
+
+  restaurant-list {
+    padding: 0 4%;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+
+  #hero-inner {
+    font-size: 1.5em;
+  }
+
+  #hamburger {
+    display: none;
+  }
+
+  ul {
+    height: fit-content;
+    transform: translate(0, 0);
+    position: static;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    padding-right: 0;
+    width: 100%;
+    background-color: #d4ac2b;
+    margin: auto 0;
+  }
+
+  #nav-right {
+    flex-basis: 35%;
+  }
+
+  #nav-right a {
+    color: #7e370c;
+    padding: 18% 0;
+  }
+
+  h3 {
+    font-size: 1.3em;
+  }
+
+  form {
+    width: 80%;
+    font-size: 1.1em;
+  }
+
+  select {
+    font-size: 0.8em;
+    padding: 3%;
+  }
+
+  input[type='submit'] {
+    font-size: 1em;
+    width: 20%;
+    margin-left: 80%;
+  }
+
+  input,
+  textarea {
+    padding: 2.5%;
+  }
+}
+
+@media (min-width: 1020px) {
+  #logo {
+    width: 2.2em;
+  }
+
+  #logo-text {
+    font-size: 1.6em;
+  }
+
+  a {
+    font-size: 1.2em;
+  }
+
+  #hero-inner {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.9em;
+  }
+
+  footer {
+    font-size: 0.9em;
+  }
+
+  h3 {
+    font-size: 1.6em;
+  }
+
+  form {
+    max-width: 1200px;
+    font-size: 1.2em;
+  }
+
+  select {
+    padding: 2%;
+  }
+
+  input[type='submit'] {
+    font-size: 1em;
+  }
+
+  input,
+  textarea {
+    padding: 2%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #logo {
+    width: 2.3em;
+  }
+
+  #logo-text {
+    font-size: 2em;
+  }
+
+  a {
+    font-size: 1.6em;
+  }
+
+  #hero-inner {
+    font-size: 3em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  h3 {
+    font-size: 2em;
+  }
+
+  form {
+    font-size: 1.6em;
+  }
+
+  input[type='submit'] {
+    font-size: 1.1em;
+  }
+
+  input,
+  textarea {
+    padding: 1.5%;
+  }
+
+  footer {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 2000px) {
+  restaurant-list {
+    padding: 0 3%;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px 20px;
+  }
+
+  #logo {
+    width: 3em;
+  }
+
+  #logo-text {
+    font-size: 2.4em;
+  }
+
+  a {
+    font-size: 2em;
+  }
+
+  #hero-inner {
+    font-size: 4em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  h3 {
+    font-size: 2.5em;
+  }
+
+  form {
+    font-size: 2em;
+  }
+
+  input[type='submit'] {
+    font-size: 1.1em;
+  }
+
+  input,
+  textarea {
+    padding: 1%;
+  }
+
+  footer {
+    font-size: 1.7em;
+  }
+}
